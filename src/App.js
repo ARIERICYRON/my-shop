@@ -4,7 +4,7 @@ import ProductsCard from "./Components/ProductsCard";
 
 function App() {
   return(
-    <div>
+    <div className="justify-items-center">
       <Header />
       <Banner />
       <ProductsCard />

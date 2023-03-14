@@ -5,7 +5,7 @@ export default function ProductsCard() {
     <div class="w-80 bg-white shadow rounded">
   <div
     class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
-    style={{ backgroundImage:`https://images.pexels.com/photos/7989741/pexels-photo-7989741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`}}
+    style={{ backgroundImage:`url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8&w=1000&q=80")`}}
   >
     <div class="flex justify-between">
       <input type="checkbox"/>
