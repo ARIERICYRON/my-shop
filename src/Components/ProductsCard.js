@@ -1,11 +1,12 @@
 import React from 'react'
 
-export default function ProductsCard() {
+
+export default function ProductsCard({image_url, sku, name, price} ) {
   return (
     <div class="w-80 bg-white shadow rounded">
   <div
     class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
-    style={{ backgroundImage:`url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8&w=1000&q=80")`}}
+    style={{ backgroundImage:`url(${image_url})`}}
   >
     <div class="flex justify-between">
       <input type="checkbox"/>
@@ -36,10 +37,10 @@ export default function ProductsCard() {
   </div>
   <div class="p-4 flex flex-col items-center">
     <p class="text-gray-400 font-light text-xs text-center">
-      Hammond robotics
+      SKU:{sku}
     </p>
-    <h1 class="text-gray-800 text-center mt-1">Item name</h1>
-    <p class="text-center text-gray-800 mt-1">€1299</p>
+    <h1 class="text-gray-800 text-center mt-1"> {name}</h1>
+    <p class="text-center text-gray-800 mt-1">${price}</p>
     <div class="inline-flex items-center mt-2">
       <button
         class="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
@@ -62,7 +63,7 @@ export default function ProductsCard() {
       <div
         class="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none"
       >
-        2
+        QUANTITY: 2
       </div>
       <button
         class="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"

@@ -1,13 +1,14 @@
 import Banner from "./Components/Banner";
 import Header from "./Components/Header";
-import ProductsCard from "./Components/ProductsCard";
+import NewProduct from "./Components/NewProduct";
+
 
 function App() {
   return(
-    <div className="justify-items-center">
+    <div className="">
       <Header />
       <Banner />
-      <ProductsCard />
+      <NewProduct />
     </div>
   )
 
